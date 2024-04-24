@@ -1,6 +1,6 @@
 html,
 body {
-  height: 100%; /* 화면의 전체 높이를 차지하도록 설정 */
+  /* height: 100%; 화면의 전체 높이를 차지하도록 설정 */
   margin: 0; /* 기본 마진 제거 */
   padding: 0; /* 기본 패딩 제거 */
   font-family: Arial, sans-serif;
@@ -10,6 +10,7 @@ body {
   background-size: 100% 100%; /* 이미지가 컨테이너에 꽉 차도록 설정 */
   background-position: center center; /* 이미지가 웹 페이지의 중앙에 위치하도록 설정 */
   background-repeat: no-repeat; /* 이미지가 반복되지 않도록 설정 */
+ 
 }
 .navbar {
   background-color: #333;
@@ -60,6 +61,8 @@ body {
     max-width: 90%;
     font-size: 20px; /* 폰트 크기 줄이기 */
   }
+
+ 
 }
 
 /* 작은 크기의 화면(예: 모바일)에 대한 스타일 */
@@ -69,3 +72,34 @@ body {
     font-size: 16px; /* 더 작은 폰트 크기로 줄이기 */
   }
 }
+
+
+
+@media (min-width: 768px) {
+  .iframe-test {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+  }
+  
+  .iframe-test iframe{
+    margin-right: 30px;
+  }
+
+}
+
+.iframe-test{
+  margin-top: 100px;
+}
+
+.iframe-test iframe {
+  height: 600px;
+  margin-bottom: 20px;
+}
+
+
+
